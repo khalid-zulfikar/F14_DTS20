@@ -35,7 +35,7 @@
 
   /* Tambahkan CSS untuk menu-icon */
   .menu-icon {
-    display: block;
+    display: block !important;
   }
 
   .main h1 {
