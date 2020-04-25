@@ -197,17 +197,28 @@ header {
   box-shadow: none;
 }
 
+/* Tambahkan CSS untuk tags <input> dan <textarea> */
+input , textarea {
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
+
 /* CSS Footer  */
 footer img {
   width: 125px;
 }
 
 footer p {
-  color: #b3aeb5;
+  color: white;
   font-size: 12px;
 }
 
 footer {
+  background-color: #11101e;
   padding-top: 30px;
   padding-bottom: 20px;
 }
