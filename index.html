@@ -8,30 +8,25 @@
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   </head>
-  <!-- Note : -->
-  <!-- 1. Setidaknya satu animasi -->
-  <!-- 2. Responsif Untuk Smartphone dan Tablet -->
-  <!-- 3. Pastikan Untuk melihat slide library jika ada yg lupa -->
-  <!-- 4. Referensi untuk Color : https://flatuicolors.com/ -->
-  <!-- 5. Referensi untuk Animasi CSS : https://www.w3schools.com/css/css3_animations.asp -->
   <body>
     <!-- Header -->
     <header>
       <div class="container">
         <div class="header-left">
-          <img class="logo" src="logo2.jpeg">
+          <img class="logo" src="images/logo.png">
         </div>
         <div>
           <span class="fa fa-bars menu-icon"></span>
         </div>
         <div class="header-right">
-          <a href="#">Informasi</a>
-          <a href="#">Anggota</a>
-          <a href="#">Kontak</a>
+          <a href="#home">Informasi</a>
+          <a href="#anggota">Anggota</a>
+          <a href="#saran">Saran</a>
         </div>
       </div>
     </header>
     <!-- Bagian Utama "main"-->
+    <section id="home">
      <div class="main">
       <div class="container">
         <h1>Selamat Datang Di Halaman Kelompok Kami</h1>
@@ -52,66 +47,74 @@
         </p>
       </div>
     </div>
+    </section>
     <!-- Bagian Extra_1 -->
-    <div class="lesson-wrapper">
+    <section id="anggota">
+    <div class="daftar-anggota">
       <div class="container">
         <div class="heading">
           <h2>Berikut adalah Anggota Kelompok Kami :</h2>
         </div>
-        <div class="lessons">
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/html.png">
-              <img src="user1.png" width="100" height="100">
-               <p>HTML & CSS</p>
+        <div class="anggota">
+          <div class="anggota-f14">
+            <div class="foto-anggota">
+              <img class="foto" src="images/zulfikar.jpg">
+               <p>Muhamad Zulfikar</p>
             </div>
-             <p class="text-contents">Muhamad Zulfikar</p>
-             <p>044767713145</p>
+             <p class="text-contents">"Sebaik-baiknya manusia adalah yang banyak manfaatnya bagi orang lain"</p>
           </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-              <p>jQuery</p>
+          <div class="anggota-f14">
+            <div class="foto-anggota">
+              <img class="foto" src="images/setiawan.jpg">
+               <p>Moh Dwi Setiawan</p>
             </div>
-            <p class="text-contents">Library JavaScript yang cepat, kaya akan fitur, dan mudah digunakan yang menangani animasi dan permintaan Ajax.</p>
+             <p class="text-contents">"Menuntut ilmu adalah taqwa. Menyampaikan ilmu adalah ibadah. Mengulang-ulang ilmu adalah zikir. Mencari ilmu adalah jihad."</p>
           </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/ruby.png">
-              <p>Ruby</p>
+          <div class="anggota-f14">
+            <div class="foto-anggota">
+              <img class="foto" src="images/afrisal.jpg">
+               <p>Mohamad Afrisal</p>
             </div>
-            <p class="text-contents">Bahasa dinamis, serba guna yang sederhana dan produktif. Ruby sering digunakan untuk membuat aplikasi web yang responsive.</p>
+             <p class="text-contents">"Terus Belajar"</p>
           </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/php.png">
-              <p>PHP</p>
+          <div class="anggota-f14">
+            <div class="foto-anggota">
+              <img class="foto" src="images/rizal.jpg">
+               <p>M. Rizal Muharriansyah</p>
             </div>
-            <p class="text-contents">Bahasa skrip open source yang dapat disematkan ke dalam HTML, dan cocok untuk pengembangan web.</p>
+             <p class="text-contents">"Dirumah Aja"</p>
+          </div>
+          <div class="anggota-f14">
+            <div class="foto-anggota">
+              <img class="foto" src="images/mardiyana.jpg">
+               <p>Mardiyana</p>
+            </div>
+             <p class="text-contents">"Tak bisa di hubungi bukan berarti tak bisa di cari"</p>
           </div>
           <div class="clear"></div>
         </div>
       </div>
     </div>
-    <div class="extra_2">
+    </section>
+    <!-- Bagian Extra_1 -->
+    <section id="saran">
+    <div class="message-wrapper">
       <div class="container">
-        <div class="heading">
-          <h2>Kelompok kami sangat terbuka untuk kritik dan saran anda:</h2>
-          <form class="form" method="post">
-            <input type="text" name="Nama" placeholder="Nama"> <br>
-            <input type="email" name="email" placeholder="Email"><br>
-            <p>Kritik/Saran :</p>
-            <textarea name="saran" rows="5" cols="100"></textarea>
-          </form>
-          <span class="btn message">Kirim Saran</span>
-          <h3>Terimakasih Untuk kritik dan Sarannya Bagi yang telah mengirimkan semoga menjadi bahas buat evaluasi kelompok kami</h3>
+        <h2>Kelompok kami sangat terbuka untuk kritik dan saran anda:</h2>
+        <form class="form" method="post">
+          <input type="text" name="Nama" placeholder="Nama"> <br>
+          <input type="email" name="email" placeholder="Email"><br>
+          <textarea name="saran" rows="5" cols="100" placeholder="Pesan"></textarea>
+        </form>
+        <span class="btn message">Kirim Saran</span>
+        <h3>Terimakasih Untuk kritik dan Sarannya Bagi yang telah mengirimkan semoga menjadi bahas buat evaluasi kelompok kami</h3>
         </div>
       </div>
-    </div>
+  </section>
+  <!-- Footer -->
     <footer>
       <div class="container">
-        <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-        <p>© 2020 DTS KOMINFO | PROGATE | PROJECT TEAM | Design by F 14 Team.</p>
+        <p>© 2020 DTS KOMINFO | PROGATE | PROJECT TEAM | Design by F 14 Team</p>
       </div>
     </footer>
   </body>
